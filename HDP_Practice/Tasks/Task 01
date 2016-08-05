@@ -1,0 +1,15 @@
+
+Before going to do Task 1
+
+a) create a directory in local machine in the following path 
+/user/horton/flightdelays/
+
+b) copy flightdelays datasets into local machine folder /user/horton/flightdelays 
+
+Task 01 
+
+Import a File into HDFS 
+
+1) Create a new Directory in HDFS named /user/horton/flightdelays.
+2) Put the three files from the /home/horton/datasets/flightdelays directory 
+on the local machine into the /user/horton/flightdelays directory in HDFS.
