@@ -1,0 +1,19 @@
+
+Task-03 
+
+Analyze Data using Pig 
+
+a) 	Write a Pig Script saved on client machine as /home/horton/solution/cleaned_total.pig that calculated the number of 
+		rows  in the /user/horton/flightdelays_clean files in HDFS.
+		Store the output of your script in a new directory in HDFS named cleaned_total.
+
+b) 	The Dest column is the destination airpott code where the flight ends. Write a Pigscript saved on client machine as 
+		/home/horton/solutions/denver_total.pig that calculates the number of rows in the /user/horton/flightdelays_clean 
+		data where the Dest field equals the Denver airport code "DEN". Store the output of your script in a 
+		new directory in HDFS named denver_total.
+
+c) The ArrDelay column is the number of minutes that a flight arrived late. 
+    Write a Pig script saved on client machine as /home/horton/solutions/denver_late.pig that counts the number of 
+    flights whose Dest is the "DEN" airport that arrived 60 or more mintues late. 
+    Store the output of your script in a new directory in HDFS named denver_late.
+
