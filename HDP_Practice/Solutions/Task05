@@ -1,0 +1,11 @@
+Task05 solution 
+
+A = LOAD 'flightdelays' using org.apache.hive.hcatalog.pig.HCatLoader();
+B = filter A by arrdelay > 0;
+C = order B by arrdelay desc parallel 3;
+STORE C INTO '/user/horton/flightdelays_nonzero' using PigStorage(',');
+
+execute the following command 
+$ pig -x tez -useHCatalog flightdelays_nonzero.pig
+
+The output consists of 13,265 records stored in 3 files.
