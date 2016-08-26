@@ -1,4 +1,3 @@
-
 Task 02
 
 Cleanse Data Using Pig
@@ -18,6 +17,7 @@ Cleanse Data Using Pig
       b) Remove all rows in the flightdelays data where the DepTime column equals the string "NA".
       c) The output should only contain the Year, Month, DayofMonth, DepTime, UniqueCarrier, FlightNum, ArrDelay, Origin and Dest
       d) Store the result as comma-separated records in a new directory in HDFS named /user/horton/flightdelays_clean
-      e) Save the script in a file named /user/horton/solution/Task02.pig.
+      e) Save the script in a file named flightdelays_clean.pig save it in the /home/horton/solutions directory on the local filesystem 
+      of the clientmachine  
 
 
