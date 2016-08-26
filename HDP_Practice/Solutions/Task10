@@ -1,0 +1,20 @@
+Task10 Solution 
+
+sqoop export \
+--connect jdbc:mysql://namenode/flightinfo \
+--username root \
+--password hadoop \
+--table weather \
+--export-dir /user/horton/weather \
+--input-fields-terminated-by ',';
+
+
+or you can also write like this 
+
+sqoop import \
+--connect jdbc:mysql://namenode/flightinfo \
+--username root \
+--password hadoop \
+--query 'SELECT * FROM weather WHERE $CONDITIONS' \
+--split-by year \
+--target-dir /user/horton/sqoopImport;
