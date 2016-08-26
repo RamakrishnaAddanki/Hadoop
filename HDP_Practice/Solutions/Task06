@@ -1,0 +1,8 @@
+Task06 Solution 
+
+Step 1: select avg(arrdelay) from flightdelays where dest = 'DEN';
+        
+Step 2: select avg(arrdelay) from flightdelays where origin = 'LAX' and dest = 'SFO';
+
+Step 3: from flightdelays select dest, avg(arrdelay) as delay group by dest order by delay asc;
+
