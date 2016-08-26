@@ -1,0 +1,27 @@
+
+Task 03 solution 
+
+a)  
+    A = LOAD 'flightdelays_clean';
+    B = group A all;
+    C = foreach B generate COUNT(A);
+    STORE C INTO 'cleaned_total';
+    
+    The Result is 30,267 records 
+    
+ b) A = LOAD 'flightdelays_clean' using PigStorage(',');
+    B = filter A by (chararray) $8 == 'DEN';
+    C = group B all;
+    D = foreach C generate COUNT(B);
+    STORE D INTO '/user/horton/denver_total';
+    
+    The Result is 495 records
+    
+ c) A = LOAD 'flightdelays_clean' using PigStorage(',');
+    B = filter A by (chararray)$8 == 'DEN' and (int) $6 >= 60;
+    C = group B all;
+    D = foreach C generate COUNT(B);
+    STORE D into '/user/horton/denver_late';
+    
+    The Result is 29 records
+
