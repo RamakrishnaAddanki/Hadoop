@@ -6,4 +6,3 @@ temperature_min int) row format delimited fields terminated by ',';
 LOAD data local inpath '/home/horton/datasets/flightdelays/sfo_weather.csv' into table sfo_weather_text;
 
 create table sfo_weather stored as orc as select * from sfo_weather_text;
-
