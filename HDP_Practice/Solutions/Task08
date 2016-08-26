@@ -1,0 +1,7 @@
+Task 08 Solution 
+
+set hive.execution.engine=tez;
+create table flights_weather as select f.*,w.temperature_max,w.temperature_min from flightdelays as f join sfo_weather as w on 
+w.year = f.year and w.month = f.month and w.dayofmonth = f.dayofmonth where f.origin = "SFO" or f.dest = "SFO" ;
+
+
