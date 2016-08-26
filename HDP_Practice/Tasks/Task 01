@@ -6,6 +6,8 @@ a) create a directory in local machine in the following path
 
 b) copy flightdelays datasets into local machine folder /user/horton/flightdelays 
 
+c) create a directory named /home/horton/solutions in your local system to save all scripts.
+
 Task 01 
 
 Import a File into HDFS 
