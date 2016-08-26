@@ -1,4 +1,7 @@
-==Define a Hive Table==
+
+Task 04 
+
+Define a Hive Table
 
   Define a Hive table named flightdelays that matches the data stored in your /user/horton/flightdelays_clean directory in HDFS.
   The Hive table should satisfy all of the following criteria:
