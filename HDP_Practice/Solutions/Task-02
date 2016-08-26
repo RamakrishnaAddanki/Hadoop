@@ -1,0 +1,8 @@
+
+Task 02 solution 
+
+A = LOAD '/user/horton/flightdelays/flight*' USING PigStorage(',');
+B = FILTER A BY (chararray) $4 != 'NA';
+C = FOREACH B GENERATE $0 as year:int, $1 as month:int, $2 as dayofmonth:int, $4 as deptime:int, $8 as uniquecarrier:chararray, 
+    $9 as flightNum:chararray,$14 as arrDelay:int,$16 as origin:chararray,$17 as dest:chararray;
+STORE C INTO '/user/horton/flightdelays_clean' using PigStorage(',');    
