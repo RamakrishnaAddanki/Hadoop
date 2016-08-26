@@ -1,0 +1,15 @@
+Task 04 Solution 
+
+create external table flightdelays (
+year int,
+month int,
+dayofmonth int,
+deptime int,
+uniquecarrier string,
+flightnum int,
+arrdelay int,
+origin string,
+dest string) 
+row format delimited
+fields terminated by ','
+location '/user/horton/flightdelays_clean';
